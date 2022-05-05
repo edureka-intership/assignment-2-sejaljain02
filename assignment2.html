@@ -11,11 +11,11 @@
             background-image: linear-gradient(to bottom, rgba(157, 14, 14, 0), #4f0707), url(/images/shutterstock_348320018@2x.png);
             background-repeat: no-repeat;
             background-attachment: fixed;
-            height: auto;
+            height: 300px;
             background-size: cover;
             align-items: center;
             width: 100%;
-            padding-bottom: 50px;
+            padding-bottom: 30px;
         }
         .login{
             color: white;
@@ -52,18 +52,64 @@
             text-align: center;
             margin: auto;
         }
+        .meal-type{
+            color: #192F60;
+            top: 340px;
+            position: absolute;
+        }
+        .quick-search{
+            color: #192F60;
+            top: 280px;
+            position: absolute;
+        }
+        
+        .card{
+            width: 400px;
+            height: 160px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-color: #ffffff;
+            border: none;
+            border-radius: 0;
+            top: 160px;
+
+        }
+        .card-img{
+            height: 160px;
+        }
+        .card-title{
+            font-weight: bolder;
+            text-align: left;
+        }
+        .card-description{
+         text-align: left;
+         color: #8c96ab;
+        } 
+
         @media only screen and (max-width :768px){
             .locationDropdown,.restaurants_name{
-                width: 200px;
-                height : 30px;
-                text-align: center;
+                width: 250px;
+                height : 35px;
             }
         }
-        @media only screen and (max-width:218px) {
+        @media only screen and (max-width:265px) {
             .locationDropdown,.restaurants_name{
                 width: 150px;
+                height: 30px;
             }   
         }
+        
+         @media only screen and (max-width:207px) {
+            .quick-search {
+                top: 300px;
+            }
+        }   
+        
+        @media only screen and (max-width:207px) {
+            .meal-type {
+                top: 400px;
+            }
+        }    
+        
     </style>
 </head>
 <body>
@@ -108,6 +154,99 @@
            </select>
         </div>
         <div class="col-1 col-md-2 col-lg-2 "></div>
+    </div>
+     <!-- quick search options  -->
+     <div class="container">
+        <div class=" quick-search mt-5 ms-4 ">
+          <h2 style="font-size: 25px;" >Quick Searches</h2>
+        </div>
+        <div class=" meal-type mt-3 ms-4">
+           <p>Discover restaurants by type of meal<p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 my-3 mx-auto text-center card  ">
+            <div class="row ">
+                <div class="col-6 px-0 mx-0 ">
+                    <img src="/assignments/Images1/shutterstock_1154073754.png" class=" card-img">
+                </div>
+                <div class="col-6 px-3 py-3">
+                    <div class="card-title">Breakfast</div>
+                    <div class="card-description">Start your day with 
+                        exclusive breakfast 
+                        options</div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 my-3 mx-auto text-center card ">
+          <div class="row ">
+                <div class="col-6 px-0 mx-0 ">
+                    <img src="/assignments/Images1/shutterstock_1130181932.png" class=" card-img">
+                </div>
+                <div class="col-6 px-3 py-3">
+                    <div class="card-title">Lunch</div>
+                    <div class="card-description">Start your day with 
+                        exclusive Lunch
+                        options
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 my-3 mx-auto text-center card ">
+            <div class="row">
+                <div class="col-6 px-0 mx-0 ">
+                    <img src="/assignments/Images1/shutterstock_351721442.png" class=" card-img">
+                </div>
+                <div class="col-6 px-3 py-3">
+                    <div class="card-title">Snacks</div>
+                    <div class="card-description">Start your day with 
+                        exclusive snacks
+                        options
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 my-3 mx-auto text-center card ">
+            <div class="row">
+                <div class="col-6 px-0 mx-0 ">
+                    <img src="/assignments/Images1/shutterstock_476864884.png" class=" card-img">
+                </div>
+                <div class="col-6 px-3 py-3">
+                    <div class="card-title">Dinner</div>
+                    <div class="card-description">Start your day with 
+                        exclusive Dinner 
+                        options
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 my-3 mx-auto text-center card ">
+            <div class="row">
+                <div class="col-6 px-0 mx-0 ">
+                    <img src="/assignments/Images1/shutterstock_305270834.png" class=" card-img">
+                </div>
+                <div class="col-6 px-3 py-3">
+                    <div class="card-title">Drink</div>
+                    <div class="card-description">Start your day with 
+                        exclusive Drinks 
+                        options
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 my-3 mx-auto text-center card ">
+            <div class="row">
+                <div class="col-6 px-0 mx-0 ">
+                    <img src="/assignments/Images1/shutterstock_1304064250.png" class=" card-img">
+                </div>
+                <div class="col-6 px-3 py-3">
+                    <div class="card-title">Nightlife</div>
+                    <div class="card-description">Start your day with 
+                        exclusive Nightlife 
+                        options
+                    </div>
+                </div>
+            </div>
+          </div>
     </div>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
